@@ -24,7 +24,7 @@ class QuestionsMatrix:
     # This regex code finds exact matches
     def regex_check(self, survey_file):
         # creates a new column with file name as first cell
-        self.matrix[0].append(survey_file[0:len(survey_file)-4]+" Y Sample")
+        self.matrix[0].append(survey_file[0:len(survey_file)-4])
         survey = open(survey_file).read()
         for item in self.matrix[1::]:
             regex = re.compile(r"\W"+item[0]+r"\W", re.I)
