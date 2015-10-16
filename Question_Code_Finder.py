@@ -31,16 +31,16 @@ class QuestionsMatrix:
             # Some surveys had special letters before each question code
             # regex1 = re.compile(r"\W"+"X"+item[0]+r"\W", re.I)
             # regex2 = re.compile(r"\W"+"B"+item[0]+r"\W", re.I)
-            regex3 = re.compile(r"\W"+"Y"+item[0]+r"\W", re.I)
-            if re.search(regex, survey) is not None:
+            # regex3 = re.compile(r"\W"+"Y"+item[0]+r"\W", re.I)
+            if re.search(regex, survey):
                 item.append("Si")
             # Some surveys had special letters before each question code
-            # elif re.search(regex1, survey) is not None:
+            # elif re.search(regex1, survey):
                 # item.append("Si")
-            # elif re.search(regex2, survey) is not None:
+            # elif re.search(regex2, survey):
                 # item.append("Si")
-            elif re.search(regex3, survey) is not None:
-                item.append("Si")
+            # elif re.search(regex3, survey):
+                # item.append("Si")
             else:
                 item.append("No")
 
