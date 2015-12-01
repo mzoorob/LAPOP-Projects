@@ -3,6 +3,8 @@ __author__ = 'Michael'
 # description
 # identifies wording differences between questions in a csv file
 
+
+# these are from other files in this repository
 from Survey_Checker import SurveyCheck
 from QuestionMatrix import QuestionsMatrix
 import re
