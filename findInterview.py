@@ -6,6 +6,7 @@ import urllib2
 import os
 from time import sleep
 
+# this program geolocates interviews (retrieves nearest named place given lat/long coordinates)
 # (optional) update me to confirm that coordinates are in-country
 COUNTRY = "Mexico"
 USERNAME = "" # geonames username
