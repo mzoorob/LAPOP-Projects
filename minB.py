@@ -29,8 +29,8 @@ def GetGeodeticMidpoint(vert1, vert2):
     return Vertex(float(lat_ti), float(lon_ti))
 
 def get_locations(place):
-    # Replace the API key below with a valid API key.
-    gmaps = googlemaps.Client(key='AIzaSyC68DLftZLRLkVWUP4-CF2z24aTRZsZsQ4')
+    # Replace with a valid API key.
+    gmaps = googlemaps.Client(key='')
     geocode_result = gmaps.geocode(place)
     print geocode_result
     NE = [geocode_result[0]["geometry"]["viewport"]["northeast"]["lat"],geocode_result[0]["geometry"]["viewport"]["northeast"]["lng"]]
