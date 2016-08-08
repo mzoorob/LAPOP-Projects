@@ -21,3 +21,13 @@ foreach i of num 1/17 21/29 40 41 {
 		}
 	}
 }
+
+
+*** simple version (does not identify countries)
+foreach var of varlist q1-q11nr {
+	capture quietly tab `var' pais
+	* I know it's country specific if r(c) == 1
+	if r(c) == 1 {
+		display "`var'"
+		}
+}
