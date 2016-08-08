@@ -3,6 +3,14 @@ import nvector as nv
 from geopy.distance import vincenty
 import googlemaps
 
+# Python 2.7
+# Description: Takes named places and sends them to Google Maps api, retrieving the minimum bounding centroid
+# input: list (csv) of areas with one entity per row in single column
+# output: spreadsheet with cols [area, radius-meters, lat, lon]
+# does not play nice with Unicode (delete accent marked characters
+# and replace them with their most similar looking unaccented character)
+
+
 def readcsv(filename):
     interviewcoords = []
     with open(filename, 'rb') as f:
