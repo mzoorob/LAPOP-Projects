@@ -1,0 +1,5 @@
+Use this site for visualizing bounding geometries:
+
+http://www.gpsvisualizer.com/map_input?form=googleearth
+
+Xenu link sleuth is a great (free) tool for finding broken links.
