@@ -6,7 +6,7 @@ use "C:\Users\zoorobmj\Desktop\grand_merge.dta"
 ** to instead find any particular country, delete outer loop and replace pais with number equal to pais of interest (line 13)
 *** plausibly one could toggle with r(c) == [num] if you wanted to, say, find questions asked in <5 countries, etc
 **** note that if you do not neeed to know which qs go with which country, delete outer loop 
-***** and 2nd if statement for drastically improved performance.
+***** and 2nd if statement for drastically improved performance. (see code below)
 foreach i of num 1/17 21/29 40 41 { 
 	display "These questions are for Country ", "`i'"
 	foreach var of varlist q1-q11nr {
