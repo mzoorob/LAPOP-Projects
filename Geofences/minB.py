@@ -3,6 +3,8 @@ import nvector as nv
 from geopy.distance import vincenty
 import googlemaps
 
+#### Note: A Google Maps API Key is required to use this code. You have to register to get a key.
+
 # Python 2.7
 # Description: Takes named places and sends them to Google Maps api, retrieving the minimum bounding centroid
 # input: list (csv) of areas with one entity per row in single column
