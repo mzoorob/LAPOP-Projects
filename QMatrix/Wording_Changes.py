@@ -5,7 +5,7 @@ __author__ = 'Michael'
 
 
 # these are from other files in this repository
-from Survey_Checker import SurveyCheck
+from Survey_Audit import SurveyCheck
 from get_questions import QuestionsMatrix
 import re
 
