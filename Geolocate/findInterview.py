@@ -6,6 +6,8 @@ import urllib2
 import os
 from time import sleep
 
+##### Note: Requires Geonames username (need to register) to use the API accessed by this script
+
 # this program geolocates interviews (retrieves nearest named place given lat/long coordinates)
 # (optional) update me to confirm that coordinates are in-country
 COUNTRY = "Mexico"
@@ -151,7 +153,7 @@ if __name__ == '__main__':
                 row.extend(["No GPS Coords", "No GPS Coords", "No GPS Coords", "No GPS Coords", "No GPS Coords", "No GPS Coords"])
             else:
                 if idx%2 == 0 | idx < 100:
-                    row.extend(get_place(row[1], row[2], user="mzoorob", id=row[0]))
+                    row.extend(get_place(row[1], row[2], user="", id=row[0]))
                     idx += 1
                 else:
                     row.extend(get_place(row[1], row[2], id=row[0]))
