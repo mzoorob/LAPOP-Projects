@@ -4,6 +4,8 @@ Author: ProgramFOX
 Licensed under CPOL v1.02: http://www.codeproject.com/info/cpol10.aspx
 """
 
+### Downloaded from http://www.codeproject.com/Articles/894766/Gibberish-Classification-Algorithm-and-Implementat
+
 from __future__ import division
 import re
 import math
