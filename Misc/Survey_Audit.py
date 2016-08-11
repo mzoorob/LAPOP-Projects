@@ -90,21 +90,6 @@ class SurveyCheck:
         except:
             pass
         return sample_min, sample_max
-        # for x in range(rowmin, rowmax):
-        #     if str(self.mergefile[x][colindex])[0] == ".":
-        #         continue
-        #     else:
-        #         p = process_value(self.mergefile[x][colindex])
-        #         if not min:
-        #             min = p
-        #             max = p
-        #             continue
-        #         else:
-        #             if p < min:
-        #                 min = p
-        #             if p > max:
-        #                 max = p
-        # return min, max
 
     def type_check(self):
         # type checks
@@ -217,15 +202,7 @@ if __name__ == '__main__':
                     new_file.append("The range for "+str(matrix[0][x])+" in country "+get_country(country_changes,change[1]) +\
                           ", year "+str(change[0])+" is "+str(current_min)+","+str(current_max))
 
-    # creates list with all file names that are text files
-    # files = [f for f in os.listdir(folder) if f.endswith('.txt')]
-    # for f in files:
-        # os.remove(f)
-        # matrix.regex_check(f)
-        # matrix.del_empty_lines(f)
-    # matrix.survey_check()
-        # print f+" is finished!"
-    # saves completed matrix to new csv file
+    # saves completed audit
     save_txt(new_file, "Audit_Output.txt")
     print "End of Program."
 
