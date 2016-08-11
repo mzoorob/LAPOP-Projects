@@ -1,6 +1,10 @@
 setwd("C:/Users/Michael's/Desktop")
 getwd()
 
+## This is just a way to use the command line executive file pdf to text from the R console
+## This is only trivially modified from a stackoverflow thread
+## Prerequistes: XPDF's pdftotext.exe (open-source)
+
 # folder with 1000s of PDFs
 dest <- "C:/Users/Michael's/Desktop/pdfs"
 
