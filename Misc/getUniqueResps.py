@@ -1,6 +1,8 @@
 __author__ = 'zoorobmj'
 import csv
 
+## reads in a survey file csv with columns and rows.
+## output: returns a spreadsheet with unique responses for each question.
 
 def read_file(filename):
     with open(filename) as csvfile:
