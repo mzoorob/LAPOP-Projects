@@ -5,6 +5,10 @@ Licensed under CPOL v1.02: http://www.codeproject.com/info/cpol10.aspx
 """
 
 ### Downloaded from http://www.codeproject.com/Articles/894766/Gibberish-Classification-Algorithm-and-Implementat
+### or: https://github.com/ProgramFOX/GibberishClassifier-Python/blob/master/gibberishclassifier.py
+
+# Michael's note: I used this program in a couple of other scripts extracting data from questionnaires. 
+# It's useful for getting rid of meaningless or empty lines in a questionnaire text files that were converted from pdf to text
 
 from __future__ import division
 import re
